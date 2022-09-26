@@ -10,3 +10,9 @@ def inpt():
     else:
         print('Введите цифру 1 или 2')
     return some_str, act
+
+def view_data(str_number):
+    q = str_number
+    for i in range(q,q+4):
+     with open('PhoneBook.txt',encoding="utf8") as file:
+      print(file.readlines()[i])
